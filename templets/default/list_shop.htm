@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta content="{dede:field name='keywords'/}" name="keywords" />
+<meta content="{dede:field name='description'  function='html2text(@me)'/}" name="description" />
+<link type="text/css" rel="stylesheet" href="/style/css/main.css" />
+</head>
+    <body>
+
+        <!--top-->
+{dede:include filename='head.htm'/}
+<!--top-->
+<div class="product">
+    <div class="kv ">
+     {dede:field.content/}
+      
+    </div>
+    <div class="product_main">
+    	<p class="line"></p>
+        <div class="content">
+            <ul class="list_style">
+            {dede:channel type ='sun' currentstyle="<li class='current'><a  href='~typelink~'>~typename~</a> </li>" }
+               <li class="line2" ><a href="[field:typelink/]">[field:typename/]</a></li>
+                {/dede:channel}
+             
+               </ul>
+            <div class="product_c">
+            	
+                <ul class="list_pro list_pro_xilie">
+                {dede:list row='6' pagesize='6' }
+                	<li>
+                    		<a href="[field:arcurl/]" class="img" target="_blank"><img src="[field:img1/]" style="width:310px;height:268px;" alt="[field:title/]产品图片" /></a>
+                        	<p><a href="[field:arcurl/]" target="_blank"><span>[field:title/]</span><em>[field:gongxiao/]</em></a></p>
+                    	</li>
+                        {/dede:list}
+          
+                        </ul>
+                
+            </div>
+            <div class="quotes">
+{dede:pagelist istitem='index,pre,next,pageno,end,option,' listsize='5' /}
+</div>
+
+        </div>
+    </div>
+    
+</div>
+<!--bottom-->
+{dede:include filename='footer.htm'/}
+<!--bottom-->
+        
+    </body>
+</html>

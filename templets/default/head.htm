@@ -1,0 +1,55 @@
+<link href="/style/css/zzsc.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/style/js/jquery-1.7.min.js"></script>
+<script>
+$(function() {
+	// 悬浮窗口
+	$(".yb_conct").hover(function() {
+		$(".yb_conct").css("right", "5px");
+		$(".yb_bar .yb_ercode").css('height', '200px');
+	}, function() {
+		$(".yb_conct").css("right", "-127px");
+		$(".yb_bar .yb_ercode").css('height', '53px');
+	});
+	// 返回顶部
+	$(".yb_top").click(function() {
+		$("html,body").animate({
+			'scrollTop': '0px'
+		}, 300)
+	});
+});
+</script>
+
+<div class="yb_conct">
+  <div class="yb_bar">
+    <ul>
+      <li class="yb_top">返回顶部</li>
+      <li class="yb_phone">{dede:global.cfg_tel/}</li>
+      <li class="yb_QQ"> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_QQ/}&site={dede:global.cfg_basehost/}&menu=no" title="即刻发送您的需求">在线咨询</a> </li>
+      <li class="yb_ercode" style="height:53px;">微信二维码 <br>
+        <img class="hd_qr" src="/style/images/weixin.jpg" width="125" alt="关注微信"> </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="header_content"> {dede:arclist   typeid='17'  titlelen='' row='1' orderby=''  addfields='img2,lianjie2'  channelid='7'}
+    <h1><a style="background:url([field:img2/]) no-repeat 0 0;" href="[field:lianjie2/]">logo</a></h1>
+    {/dede:arclist}
+    <div class="nav_left"> </div>
+    <div class="nav_right"> </div>
+    <div class="nav_top"> </div>
+    <ul class="menu">
+      <li><a href="{dede:global.cfg_basehost/}" {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='menu-a' ":@me="";{/dede:field} >首页</a></li>
+      {dede:channel type='top'  currentstyle="
+      <li><a href='~typelink~' class='menu-a'>~typename~</a> </li>
+      "}
+      <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+      {/dede:channel}
+    </ul>
+    <ul class="icon">
+      <li id="menu_icon1"><a href="{dede:global.cfg_shop/}">购物车</a></li>
+      <li id="menu_icon2"><a href="{dede:global.cfg_weibo/}">分享</a></li>
+      <!--            <li id="menu_icon3"><a href="#">search</a></li>
+-->
+    </ul>
+  </div>
+</div>

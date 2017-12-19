@@ -1,0 +1,8 @@
+INSERT INTO `dede_addon17` VALUES('8','17','','','127.0.0.1','/style/images/logo.png','/','');
+INSERT INTO `dede_addon17` VALUES('9','18','','','127.0.0.1','/uploads/150830/1-150S01PJR49.jpg','#','');
+INSERT INTO `dede_addon17` VALUES('10','18','','','127.0.0.1','/uploads/150830/1-150S01PQA48.jpg','#','');
+INSERT INTO `dede_addon17` VALUES('11','18','','','127.0.0.1','/uploads/150830/1-150S01P9152S.jpg','#','');
+INSERT INTO `dede_addon17` VALUES('12','18','','','127.0.0.1','/uploads/150830/1-150S01Q513624.jpg','#','');
+INSERT INTO `dede_addon17` VALUES('13','19','','','127.0.0.1','/uploads/150830/1-150S01S31E08.jpg','#',' <br> 美国新概念气垫B.B霜 <br>\r\n弹力新肌，2倍韩国红参精萃');
+INSERT INTO `dede_addon17` VALUES('14','19','','','127.0.0.1','/uploads/150830/1-150S01S40bH.jpg','#','ANYA Multi Effect Pro Eye Cream <br> 初步活能微震动按摩<br>\r\n中国第1款微震动眼霜');
+INSERT INTO `dede_addon17` VALUES('15','19','','','127.0.0.1','/uploads/150830/1-150S01S503635.jpg','#','ANYA Cusion B.B Cream\r\n<br>\r\n何来新概念气垫B.B霜\r\n<br>\r\n随时随地，尽享无瑕自信');

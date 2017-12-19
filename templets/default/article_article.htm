@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta content="{dede:field.keywords/}" name="keywords" />
+<meta content="{dede:field.description  function='html2text(@me)'/}" name="description" />
+<link type="text/css" rel="stylesheet" href="/style/css/main.css" />
+</head>
+
+<body class="body_white">
+<!--top-->
+{dede:include filename='head.htm'/}
+<!--top-->
+    <div class="praise">
+    <div class="praise2">
+    	<div class="content">
+        <h1 class="htitle">{dede:field.title/}</h1>
+        <p class="xinxi">时间：{dede:field name='pubdate' function='GetDateMk(@me)'/} &nbsp;&nbsp;&nbsp;浏览：<script src='{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}'type='text/javascript' language='javascrip' ></script>次</p>
+        <div class="content" style="margin-top:20px; min-height:300px; border-bottom:#333 1px solid; margin-bottom:10px; padding-bottom:20px; overflow:hidden;">
+     {dede:field.body/}
+        </div>
+         <div class="clear"></div>
+    	<div class="page">
+        <div class="up">{dede:prenext get='pre'/}</a></div>
+         <div class="down">{dede:prenext get='next'/}</a></div>
+        </div>
+            <div class="clear"></div>
+            <div class="pagination"></div>
+        </div>
+    </div>
+    
+    
+    
+    
+    			
+</div>
+
+<!--bottom-->
+{dede:include filename='footer.htm'/}
+<!--bottom-->
+</body>
+</html>
